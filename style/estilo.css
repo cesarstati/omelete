@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap'); */
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Stone_100: hsl(30, 54%, 90%);
+  --Stone_150: hsl(30, 18%, 87%);
+  --Stone_600: hsl(30, 10%, 34%);
+  --Stone_900: hsl(24, 5%, 18%);
+  --Brown_800: hsl(14, 45%, 36%);
+  --Rose_800: hsl(332, 51%, 32%);
+  --Rose_50: hsl(330, 100%, 98%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: var(--Stone_100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+   }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+/* Image and header section CSS  */
+ .wrapper .image-card img{
+  width: 100%;
+  border-radius: 1rem;
+  height: auto;
+ }
+
+ header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+
+ }
+
+.recipe h1{
+  font-family: "Young Serif", serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: var(--Stone_900);
+}
+
+.recipe-sub {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color:var(--Stone_600)
+}
+
+
+/* preparation time */
+
+.pre-time {
+  background-color: var(--Rose_50);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 20px 0 5px 0;
+}
+
+.preparation-wrapper {
+  margin: 0 1.5rem
+}
+
+.preparation-wrapper h4{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--Rose_800)
+}
+
+.prep-list {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  padding: 0 2.0rem;
+  color:var(--Stone_600)
+}
+
+section ul li,
+div ul li{
+  padding-left: 1rem;
+}
+
+span.head {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Stone_600);
+}
+
+article {
+  margin: 0 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+h2{
+  font-family: "Young Serif", serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--Brown_800);
+  padding: 1rem 0 1.5rem 0;
+}
+ ul.down,
+ ol.down {
+  padding: 0 0 35px 20px;
+  border-bottom: 1px solid var(--Stone_150);
+ }
+
+ ol li{
+  color: var(--Stone_600);
+  padding-left: 1rem;
+  line-height: 2rem;
+ }
+
+ ::marker {
+  font-weight: 900;
+  color: var(--Brown_800);
+ }
+
+/*Nutrition*/
+
+table {
+  width: 100%;
+  padding: 30px;
+  line-height: 3rem;
+}
+
+td {
+  padding-left: 2rem;
+  border-bottom: 0.1rem solid rgb(212, 212, 212);
+}
+
+.item {
+  font-weight: 800;
+  color: hsl(332, 51%, 32%);
+} 
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+  body{
+      padding: 0;
+  }
+  .container{
+      width: 100%;
+      
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body{
+      padding: 0;
+  }
+  .container{
+      width: 100%;
+      padding: 0;
+      
+  }
+  
+  .wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+  }
+
+  .wrapper .image-card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .wrapper .image-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+h1{
+    font-size: 2.3rem;
+    padding: 5px 20px 0 20px;
+}
+
+.title-desc{
+    margin: 20px;
+    font-size: 1.0rem;
+}
+
+.pre-time{
+    padding: 10px;
+    margin: 20px;
+}
+
+.preparation-wrapper{
+    margin: 0 20px;
+}
+
+.prep-list{
+    padding: 0 25px;
+}
+
+article{
+    padding: 0 10px;
+}
+
+}
+}
+
+@media screen and (max-width:335px){
+  h1 {
+    font-size: 1.9rem;
+  }
+  .preparation{
+    font-size: 1.4rem;
+  }
+  .pre-time{
+    padding: 15px;
+    margin: 20px 10px 0 10px;
+  }
+}
+
