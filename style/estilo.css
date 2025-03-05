@@ -115,9 +115,14 @@ article {
   margin: 0 20px;
 }
 
+.instructions {
+  padding-left: 1rem;
+}
+
 section {
   margin: 20px 0;
 }
+
 h2{
   font-family: "Young Serif", serif;
   font-size: 1.7rem;
@@ -161,22 +166,15 @@ td {
 } 
 
 /*responsive*/
-@media screen and (max-width: 768px) {
+/*para telas até 375px*/
+@media screen and (max-width: 480px) {
   body{
-      padding: 0;
+    padding: 0;
+    
   }
   .container{
       width: 100%;
-      
-  }
-}
-
-@media screen and (max-width: 460px) {
-  body{
-      padding: 0;
-  }
-  .container{
-      width: 100%;
+      border-radius: 0;
       padding: 0;
       
   }
@@ -193,6 +191,7 @@ td {
       align-items: center;
       justify-content: center;
       width: 100%;
+      background-color: blue;
   }
 
   .wrapper .image-card img{
@@ -206,6 +205,11 @@ h1{
     padding: 5px 20px 0 20px;
 }
 
+.recipe h1{
+  font-size: 2.3rem;
+  padding: 0.1rem;
+}
+
 .title-desc{
     margin: 20px;
     font-size: 1.0rem;
@@ -213,7 +217,7 @@ h1{
 
 .pre-time{
     padding: 10px;
-    margin: 20px;
+    /* margin: 1rem; */
 }
 
 .preparation-wrapper{
@@ -224,23 +228,13 @@ h1{
     padding: 0 25px;
 }
 
+
+
+
+
 article{
     padding: 0 10px;
 }
 
-}
-}
-
-@media screen and (max-width:335px){
-  h1 {
-    font-size: 1.9rem;
-  }
-  .preparation{
-    font-size: 1.4rem;
-  }
-  .pre-time{
-    padding: 15px;
-    margin: 20px 10px 0 10px;
-  }
 }
 
